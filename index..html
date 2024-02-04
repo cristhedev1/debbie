@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Glide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <style>
+        /* Custom styles for a more romantic and vibrant look */
+        body {
+            background-color: #ffecf2; /* Light pink background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card {
+            background-color: #fff1f4; /* Light pink card background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out; /* Add a subtle transition to the box shadow */
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+        }
+
+        .card-title {
+            color: #cc3366; /* Pink title color */
+        }
+
+        .card-content {
+            color: #8c325e; /* Dark pink content color */
+        }
+
+        .gallery-container {
+            background-color: #fff1f4; /* Light pink gallery background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .glide {
+            width: 50%;
+            margin: 0 auto;
+            overflow: hidden; /* Hide overflowing content for a neat look */
+        }
+
+        .glide__slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out; /* Add a subtle transition to the image */
+        }
+
+        .glide__slide:hover img {
+            transform: scale(1.05); /* Zoom in slightly on hover */
+        }
+
+        .glide__slide p {
+            color: #cc3366; /* Pink caption color */
+            margin-top: 0.5rem;
+        }
+
+        .glide__arrow {
+            background-color: #cc3366; /* Pink arrow background color */
+            color: #fff; /* White arrow text color */
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add a subtle transition to the arrow */
+        }
+
+        .glide__arrow:hover {
+            background-color: #8c325e; /* Dark pink on hover */
+        }
+
+        /* Style for the audio player */
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            display: none; /* Hide the audio player */
+        }
+
+        /* Style for the play button */
+        .play-button {
+            background-color: #cc3366;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add a subtle transition to the button */
+        }
+
+        .play-button:hover {
+            background-color: #8c325e;
+        }
+    </style>
+    <title>Speedy Recovery Wishes</title>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <!-- Card with the recovery message -->
+        <div class="max-w-xl mx-auto card p-6 rounded-md mb-8">
+            <h2 class="text-3xl font-semibold card-title mb-4 text-indigo-600">Speedy Recovery Wishes</h2>
+            <p class="text-lg card-content">Dear Debbie,</p>
+            <p class="text-lg card-content">Wishing you a swift and complete recovery.In moments like these, I wish I could sprinkle a bit of magic to make you feel better instantly. Take all the time you need to rest and heal. I can't wait to see you back to your amazing self!</p>
+        </div>
+
+        <!-- Card with slideshow using Glide.js -->
+        <div class="max-w-xl mx-auto gallery-container p-6 rounded-md">
+            <h2 class="text-3xl font-semibold card-title mb-4 text-indigo-600">The Queen's Flawless moments</h2>
+            
+            <!-- Image slideshow -->
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        <!-- Slide 1 -->
+                        <div class="glide__slide">
+                            <img src="ad7a1b664c2736565a12b3caaf37cfd9.jpg" alt="Image 1">
+                            <p class="text-gray-600 mt-2">All-time favorite wallpaper</p>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="glide__slide">
+                            <img src="IMG-20230607-WA0040.jpg" alt="Image 2">
+                            <p class="text-gray-600 mt-2">Her stealing the show effortlessly</p>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="glide__slide">
+                            <img src="IMG-20231110-WA0037.jpg" alt="Image 3">
+                            <p class="text-gray-600 mt-2">When she bought her Glasses</p>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="glide__slide">
+                            <img src="IMG-20231116-WA0061.jpg" alt="Image 4">
+                            <p class="text-gray-600 mt-2">Her in a dress</p>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="glide__slide">
+                            <img src="254111550163_status_6508401b41aa46ca8a77f3e8f583f6c0.jpg" alt="Image 5">
+                            <p class="text-gray-600 mt-2">My God is'nt she stunning</p>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="glide__slide">
+                            <img src="254111550163_status_92e504db42474dfab1560581667065fb.jpg" alt="Image 4">
+                            <p class="text-gray-600 mt-2">Her rocking one of her gorgeous creations</p>
+                        </div>
+                        
+                        <!-- Add more slides as needed -->
+                    </div>
+                </div>
+                <!-- Add Navigation -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Play button to start audio -->
+        <div class="play-button" onclick="playAudio()">Play Music</div>
+
+        <!-- Background music (autoplay added) -->
+        <audio id="background-music" loop>
+            <source src="MIIA - Dynasty (Lyrics).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Include Glide.js library for the slideshow -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    <!-- Initialize Glide.js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Glide('.glide', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 5000,
+            }).mount();
+        });
+
+        // Function to play the audio
+        function playAudio() {
+            var audio = document.getElementById("background-music");
+            audio.play();
+            // Hide the play button after it's clicked
+            var playButton = document.querySelector(".play-button");
+            playButton.style.display = "none";
+        }
+    </script>
+</body>
+</html>
